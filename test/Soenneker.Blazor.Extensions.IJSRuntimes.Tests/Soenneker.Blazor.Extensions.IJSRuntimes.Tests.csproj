@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net11.0</TargetFramework>
+        <Features>$(Features);runtime-async=on</Features>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Soenneker.Tests.Unit" Version="11.0.1413" />
+        <PackageReference Include="TUnit" Version="1.76.45" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\Soenneker.Blazor.Extensions.IJSRuntimes\Soenneker.Blazor.Extensions.IJSRuntimes.csproj" />
+    </ItemGroup>
+
+</Project>
